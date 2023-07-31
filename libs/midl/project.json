@@ -1,0 +1,23 @@
+{
+  "root": "libs/midl",
+  "sourceRoot": "libs/midl/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/midl/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/midl"],
+      "options": {
+        "jestConfig": "libs/midl/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

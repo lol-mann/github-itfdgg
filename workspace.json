@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "projects": {
+    "admin": "apps/admin",
+    "admin-e2e": "apps/admin-e2e",
+    "midl": "libs/midl",
+    "user": "apps/user",
+    "user-e2e": "apps/user-e2e"
+  }
+}
